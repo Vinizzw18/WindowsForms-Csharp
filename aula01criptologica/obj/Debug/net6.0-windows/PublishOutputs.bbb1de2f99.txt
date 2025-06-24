@@ -1,0 +1,5 @@
+C:\Cripto\aula01criptologica.exe
+C:\Cripto\aula01criptologica.dll
+C:\Cripto\aula01criptologica.deps.json
+C:\Cripto\aula01criptologica.runtimeconfig.json
+C:\Cripto\aula01criptologica.pdb

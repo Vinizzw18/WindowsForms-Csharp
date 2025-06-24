@@ -33,6 +33,8 @@ namespace aula01criptologica
             btnVerificar.Enabled = false;
         }
 
+
+
         private void btnFechar_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
@@ -64,7 +66,6 @@ namespace aula01criptologica
                     txtLetra.Text = "";
                 }
             }
-            lblPalavraCripto.Text = $"Palavra ({PalavraSecreta.Length} letras): {new string(palavrasecretaarray)}";
             lblPalavraAcerto.Text = new string(palavrasecretaarray);
             if (acertouLetra)
             {
@@ -98,6 +99,7 @@ namespace aula01criptologica
                 return;
             }
             PalavraSecreta = txtPalavra.Text.Trim().ToUpper();
+            string embaralho = Embaralhar(PalavraSecreta);
             if (!int.TryParse(txtTentativas.Text, out tentativasRestantes) || tentativasRestantes <= 0)
             {
                 MessageBox.Show("Por favor, digite um número de tentativas maior que zero e seja válida!", "Tentativas", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -106,11 +108,12 @@ namespace aula01criptologica
                 return;
             }
             palavrasecretaarray = new char[PalavraSecreta.Length];
-            for (int i = 0; i < PalavraSecreta.Length; i++)
+            for (int  i = 0;  i  < PalavraSecreta.Length;  i ++)
             {
                 palavrasecretaarray[i] = '_';
             }
-            lblPalavraCripto.Text = $"Palavra ({PalavraSecreta.Length} letras): {new string(palavrasecretaarray)} ";
+
+            lblPalavraCripto.Text = $"Palavra ({PalavraSecreta.Length} letras): {new string(embaralho)} ";
             lblPalavraAcerto.Text = new string(palavrasecretaarray);
             txtPalavra.Enabled = false;
             txtTentativas.Enabled = false;
@@ -121,6 +124,19 @@ namespace aula01criptologica
             lblAcertouErrou.Text = $"Tentativas restantes: {tentativasRestantes}";
             txtPalavra.Text = " ";
             txtTentativas.Text = "";
+        }
+        static string Embaralhar(string input)
+        {
+            char[] array = input.ToCharArray();
+            Random rng = new Random();
+            for (int i = array.Length - 1;  i > 0;  i--)
+            {
+                int j = rng.Next(i + 1);
+                char temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+            return new string(array);
         }
     }
 }
