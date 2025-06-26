@@ -1,0 +1,12 @@
+C:\Users\Aluno\source\repos\CircoDeApps\bin\Debug\CICLOAPPS.exe.config
+C:\Users\Aluno\source\repos\CircoDeApps\bin\Debug\CICLOAPPS.exe
+C:\Users\Aluno\source\repos\CircoDeApps\bin\Debug\CICLOAPPS.pdb
+C:\Users\Aluno\source\repos\CircoDeApps\obj\Debug\CircoDeApps.csproj.AssemblyReference.cache
+C:\Users\Aluno\source\repos\CircoDeApps\obj\Debug\CICLOAPPS.frmBuscaCEP.resources
+C:\Users\Aluno\source\repos\CircoDeApps\obj\Debug\CICLOAPPS.frmMenu.resources
+C:\Users\Aluno\source\repos\CircoDeApps\obj\Debug\CICLOAPPS.frmSplash.resources
+C:\Users\Aluno\source\repos\CircoDeApps\obj\Debug\CICLOAPPS.Properties.Resources.resources
+C:\Users\Aluno\source\repos\CircoDeApps\obj\Debug\CircoDeApps.csproj.GenerateResource.cache
+C:\Users\Aluno\source\repos\CircoDeApps\obj\Debug\CircoDeApps.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\source\repos\CircoDeApps\obj\Debug\CICLOAPPS.exe
+C:\Users\Aluno\source\repos\CircoDeApps\obj\Debug\CICLOAPPS.pdb
